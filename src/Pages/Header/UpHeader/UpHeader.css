@@ -1,0 +1,48 @@
+.up-header {
+  background-color: #f3e5dc;
+}
+.up-header-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.up-header-item strong {
+  color: #6e5321;
+}
+.mail {
+  color: #b17a58;
+}
+.mail:hover {
+  color: #b17a58;
+}
+.icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.up-header ul li {
+  list-style: none;
+}
+.fab {
+  color: #c49477;
+  background-color: rgb(250, 245, 245);
+  margin-top: 8px;
+  margin-left: 5px;
+  padding: 11px;
+  border-radius: 50%;
+  font-size: 20px;
+  font-weight: 500;
+}
+.up-header-item .up-header-btn {
+  background-color: #ac7757;
+  padding: 15px 24px;
+  color: rgb(240, 244, 248);
+  font-weight: bold;
+  font-size: 14px;
+  word-spacing: 2px;
+  border: 1px solid #ac7757;
+}
+.up-header-item .up-header-btn:hover {
+  outline: 0;
+  border: 1px solid #ac7757;
+}

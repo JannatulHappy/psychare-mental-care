@@ -1,0 +1,28 @@
+.about {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.about-right {
+  background-color: rgb(241, 218, 187);
+  clip-path: polygon(0 0, 90% 0, 62% 100%, 0 100%);
+}
+.hr {
+  color: rgb(175, 110, 24);
+  border-bottom: 4px solid rgb(172, 107, 21);
+  width: 70px;
+}
+.about-sub-title {
+  color: rgb(202, 170, 127);
+  font-size: 26px;
+  font-weight: 400;
+}
+.about-doctor {
+  display: flex;
+  flex-direction: column;
+}
+.about-doctor img {
+  margin-top: 8px;
+  width: 80px;
+  height: 50px;
+}
