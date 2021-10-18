@@ -1,0 +1,33 @@
+.patient-left{
+    background-color: #22578a;
+    text-align: center;
+    padding: 45px 30px 50px;
+   height: 320px;
+}
+.offer-sub-title{
+    color:rgb(204, 194, 194)
+}
+.offer-btn{
+    background-color: white;
+    color: rgb(59, 34, 34);
+    padding: 8px 26px;
+    font-weight: 500;
+    margin-top: 14px;
+    border-radius: 5px;
+    border: none;
+}
+.fa-check{
+    color: rgb(180, 137, 82);
+    margin-right: 5px;
+}
+.patient-title{
+    color: rgb(136, 90, 29);
+}
+.patient-sub-title{
+    color:rgb(165, 127, 78);
+    margin-top:20px;
+    margin-bottom: 10px;
+}
+.patient-text{
+color:gray;
+}

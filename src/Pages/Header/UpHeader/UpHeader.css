@@ -1,5 +1,5 @@
 .up-header {
-  background-color: #f3e5dc;
+  background-color: #f8efe9;
 }
 .up-header-item {
   display: flex;
@@ -25,7 +25,7 @@
 }
 .fab {
   color: #c49477;
-  background-color: rgb(250, 245, 245);
+  background-color: rgb(238, 224, 224);
   margin-top: 8px;
   margin-left: 5px;
   padding: 11px;

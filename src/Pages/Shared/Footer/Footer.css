@@ -1,0 +1,19 @@
+.footer-container{
+  background-color: rgb(32, 6, 6);
+}
+.footer-hr{
+  border-bottom:5px solid rgb(226, 194, 152);
+  width:200px;
+}
+.footer-title{
+  color:rgb(238, 229, 229)
+}
+.footer-text{
+  color:rgb(194, 185, 185)
+}
+.footer-last-text{
+  color:rgb(194, 185, 185);
+  background-color: rgb(54, 35, 35);
+  padding: 16px 0px;
+  border-radius: 8px;
+}

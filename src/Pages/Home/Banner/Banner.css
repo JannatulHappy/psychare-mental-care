@@ -1,4 +1,9 @@
-.banner-container{
-    background-image: url("../../../assets/banner.jpg");
-    padding: 500px;
+.banner{
+  
+background-image: url('../../../assets/carousel-3.jfif');
+width: 100vw;
+height: 100vh;
+
+background-repeat: no-repeat;
+
 }

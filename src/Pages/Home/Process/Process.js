@@ -6,9 +6,9 @@ const Process = () => {
     <div className="process-container ">
       <div className="process row my-5  container mx-auto">
         <div className="col-lg-6 col-md-12 process-left">
-          <img className="img-fluid px-5" src={process} alt="" />
+          <img className="img-fluid mt-5 px-5" src={process} alt="" />
         </div>
-        <div className="col-lg-6 col-md-12 process-right mt-2">
+        <div className="col-lg-6 col-md-12 process-right mt-5">
           <h6 className="sub-title ">
             <i className="fas fa-grip-lines"></i>
             <i className="fas fa-grip-lines"></i>
