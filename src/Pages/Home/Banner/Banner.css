@@ -1,0 +1,12 @@
+.banner{
+    background-image: url(../../../assets/banner-3.jpg);
+    height: 97vh;
+    width: 100vw;
+    background-size: cover;
+    background-blend-mode: overlay;
+   
+}
+.banner-left{
+    margin-top: 150px;
+    padding-right: 50px;
+}
