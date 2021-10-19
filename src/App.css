@@ -4,9 +4,10 @@
   padding: 0;
   margin: 0;
   font-family: 'Andada Pro', serif;
+  overflow-x: hidden;
 }
 body{
-  overflow-x: hidden;
+  
   box-sizing: border-box;
 
 }

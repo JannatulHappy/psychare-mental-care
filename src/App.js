@@ -10,40 +10,52 @@ import Blog from "./Pages/Blog/Blog";
 import Services from "./Pages/Home/Services/Services";
 import Error from "./Pages/Error/Error";
 import ServiceDetail from "./Pages/ServiceDetail/ServiceDetail";
+import AuthProvider from "./Pages/Context/AuthProvider";
+import Login from "./Pages/Login/Login";
+import Register from "./Pages/Register/Register";
+import PrivateRoute from "./Pages/PrivateRoute/PrivateRoute";
 
 function App() {
   return (
     <div>
-      <Router>
-        <Header></Header>
-        <Switch>
-          <Route exact path="/">
-            <Home></Home>
-          </Route>
-          <Route exact path="/home">
-            <Home></Home>
-          </Route>
-          <Route path="/about">
-            <About></About>
-          </Route>
-          <Route path="/services">
-            <Services></Services>
-          </Route>
-          <Route path="/service/:serviceId">
-            <ServiceDetail></ServiceDetail>
-          </Route>
-          <Route path="/patients">
-            <Patients></Patients>
-          </Route>
-          <Route path="/blog">
-            <Blog></Blog>
-          </Route>
-          <Route path="*">
-            <Error></Error>
-          </Route>
-        </Switch>
-        <Footer></Footer>
-      </Router>
+      <AuthProvider>
+        <Router>
+          <Header></Header>
+          <Switch>
+            <Route exact path="/">
+              <Home></Home>
+            </Route>
+            <Route exact path="/home">
+              <Home></Home>
+            </Route>
+            <Route path="/about">
+              <About></About>
+            </Route>
+            <Route path="/services">
+              <Services></Services>
+            </Route>
+            <PrivateRoute path="/service/:serviceId">
+              <ServiceDetail></ServiceDetail>
+            </PrivateRoute>
+            <PrivateRoute path="/patients">
+              <Patients></Patients>
+            </PrivateRoute>
+            <PrivateRoute path="/blog">
+              <Blog></Blog>
+            </PrivateRoute>
+            <Route path="/login">
+              <Login></Login>
+            </Route>
+            <Route path="/register">
+              <Register></Register>
+            </Route>
+            <Route path="*">
+              <Error></Error>
+            </Route>
+          </Switch>
+          <Footer></Footer>
+        </Router>
+      </AuthProvider>
     </div>
   );
 }

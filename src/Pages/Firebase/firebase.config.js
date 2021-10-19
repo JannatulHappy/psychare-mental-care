@@ -16,6 +16,6 @@ const firebaseConfig = {
   projectId: "psychare-39c51",
   storageBucket: "psychare-39c51.appspot.com",
   messagingSenderId: "1086785451073",
-  appId: "1:1086785451073:web:627514ec34bc6c88c682c0"
+  appId: "1:1086785451073:web:627514ec34bc6c88c682c0",
 };
 export default firebaseConfig;

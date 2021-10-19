@@ -4,7 +4,7 @@ import "./Service.css";
 const Service = (props) => {
   const { name, image, title2Des,id } = props.service;
   return (
-    <div className="col-lg-4 col-md-6 col-12 p-4 service-container ">
+    <div className="col-lg-4 col-md-6 col-12 px-4 service-container ">
       <div className="service">
         <div className="col">
           <div className="card pb-3 px-3 h-100">
