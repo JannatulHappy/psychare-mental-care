@@ -23,19 +23,19 @@ const Patients = () => {
             the comfort of your own home or office.
           </h5>
           <p>
-            <i class="fas fa-check"></i>All forms are PDF files. You will need
+            <i className="fas fa-check"></i>All forms are PDF files. You will need
             AdobeReader® to view them...
           </p>
           <p>
-            <i class="fas fa-check"></i>If you do not already have AdobeReader®
+            <i className="fas fa-check"></i>If you do not already have AdobeReader®
             installed on your computer, Click Here to download.
           </p>
           <p>
-            <i class="fas fa-check"></i>Download the necessary form(s), print
+            <i className="fas fa-check"></i>Download the necessary form(s), print
             them out and fill in the required information.
           </p>
           <p>
-            <i class="fas fa-check"></i>Fax us your printed and completed
+            <i className="fas fa-check"></i>Fax us your printed and completed
             form(s) or bring it with you to your appointment
           </p>
           <img src={experianceIng} alt="" />

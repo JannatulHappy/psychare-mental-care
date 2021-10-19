@@ -1,60 +1,61 @@
-.header{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    box-shadow: 8px 5px 8px gray;
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 8px 5px 8px gray;
 }
-.header-middle a{
-    text-decoration: none;
-    margin-right:16px;
-    color: rgb(116, 83, 40);
-    font-size: 18px;
-    font-weight: 500;
-    margin-left: 9px;
+.header-middle a {
+  text-decoration: none;
+  margin-right: 16px;
+  color: rgb(116, 83, 40);
+  font-size: 18px;
+  font-weight: 500;
+  margin-left: 9px;
 }
-.header-middle a:hover, .header-middle a:active{
-color:rgb(175, 119, 45);
-font-size: 18px;
+.header-middle a:hover,
+.header-middle a:active {
+  color: rgb(175, 119, 45);
+  font-size: 18px;
 }
-.header-right{
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.header-right {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-span i{
-    color: #8b5838;
-    background-color: #f7efeb;
-    margin-top: 3px;
-    margin-left: 5px;
-    margin-right: 3px;
-    padding: 16px;
-    border-radius: 50%;
-    font-size: 20px;
-    font-weight: 500;
+span i {
+  color: #8b5838;
+  background-color: #f7efeb;
+  margin-top: 3px;
+  margin-left: 5px;
+  margin-right: 3px;
+  padding: 16px;
+  border-radius: 50%;
+  font-size: 20px;
+  font-weight: 500;
 }
-.header-btn{
-    color: #a0703a;
-    padding: 9px 28px;
-    font-weight: 500;
-    font-size: 16px;
-    word-spacing: 2px;
-    border: 2px solid #ac7757;
-    border-radius: 7px;
-    margin-left:5px ;
-    margin-right:5px ;
-    background-color: #faf5f1;
+.header-btn {
+  color: #a0703a;
+  padding: 9px 28px;
+  font-weight: 500;
+  font-size: 16px;
+  word-spacing: 2px;
+  border: 2px solid #ac7757;
+  border-radius: 7px;
+  margin-left: 5px;
+  margin-right: 5px;
+  background-color: #faf5f1;
 }
-.header-right a{
-    text-decoration: none;
-    font-size: 16px;
+.header-right a {
+  text-decoration: none;
+  font-size: 16px;
 }
-.header-right p{
-    color:rgb(156, 110, 49);
-    margin: 5px;
-    font-weight: 500;
+.header-right p {
+  color: rgb(156, 110, 49);
+  margin: 5px;
+  font-weight: 500;
 }
 .header-right a:hover {
-    color: rgb(245, 241, 236);
-    border: 2px solid #ac7757;
-    background-color: rgb(167, 130, 83);
-  }
+  color: rgb(245, 241, 236);
+  border: 2px solid #ac7757;
+  background-color: rgb(167, 130, 83);
+}
