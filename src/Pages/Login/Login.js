@@ -4,10 +4,10 @@ import "./Login.css";
 import googleImg from "../../assets/google.jpg";
 // login form
 const Login = () => {
-  const {setEmail,setPassword, error, signInWithGoogle,  handleUserLogin } = useAuth();
+  const { setEmail, setPassword, error, signInWithGoogle,loginWithEmailPassword} =useAuth();
   // needed things imported
   const location = useLocation();
-  const redirect_url = location.state?.from || "/home";
+  const redirect_url = location.state?.from || "/home"; //condition route
   const history = useHistory();
   // google login
   const handleGoogleLogin = () => {
@@ -15,44 +15,43 @@ const Login = () => {
       history.push(redirect_url);
     });
   };
-  
-
-  const handleEmail = (e) => {
-    setEmail(e.target.value);
-  };
-  const handlePassword = (e) => {
-    setPassword(e.target.value);
-  };
-
-  const handleLogin = () => {
-    handleUserLogin();
-  };
-
+ 
+    // get email and password 
+    const userEmailHandeler = e => {
+      setEmail(e.target.value)
+  }
+  const userPasswordHandeler = e => {
+      setPassword(e.target.value)
+  }
+  // login with email and password handeler 
+  const emailPasswordloginHandeler = e => {
+      e.preventDefault()
+      loginWithEmailPassword()
+  }
   return (
     // login form
     <div className="login-form row my-5">
       <h2 className="login-title fw-bold ms-5">Login</h2>
-      <form className="">
+      <form onSubmit={emailPasswordloginHandeler}>
         <input
-          onChange={handleEmail}
+          required onBlur={userEmailHandeler} 
           className="mt-2 p-2"
           type="email"
           placeholder="Email"
         />
         <br />
         <input
-          onChange={handlePassword}
+          required onBlur={userPasswordHandeler}
           className="mt-2 p-2"
           type="password"
           placeholder="Password"
         />
         <br />
-        <button
-          onClick={handleLogin}
-          className="btn btn-success w-50 mx-auto my-4 login-btn"
-        >
-          Login
-        </button>
+
+        <input value="Login"
+          className="btn btn-success mt-2 w-50 mx-auto my-4 login-btn"
+          type="submit"
+        />
       </form>
       <p>
         New to Psychare?<Link to="/register">Create Account</Link>
@@ -71,3 +70,4 @@ const Login = () => {
 };
 
 export default Login;
+
