@@ -9,10 +9,10 @@ const Header = () => {
     <div>
       <UpHeader></UpHeader>
       <div className="header my-3 mx-auto row container-lg">
-        <div className="col-lg-3 col-md-6 pe-5 col-12">
+        <div className="col-lg-3 col-md-6  col-12">
           <img src={logo} alt="" />
         </div>
-        <nav className="header-middle col-lg-4 col-md-6 col-12 ps-5">
+        <nav className="header-middle col-lg-4 col-md-6 col-12 ">
           <NavLink to="/home"> Home</NavLink>
           <NavLink to="/about">About</NavLink>
           <NavLink to="/services">Services</NavLink>
@@ -24,7 +24,7 @@ const Header = () => {
             LOGIN
           </NavLink>
           <span>
-            <i class="fas fa-shopping-cart"></i>
+            <i className="fas fa-shopping-cart"></i>
           </span>
         </div>
       </div>

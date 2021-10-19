@@ -14,18 +14,18 @@ const Footer = () => {
             may require. we adore finding the correct answer.
           </p>
           <div className="col-md-4 col-6 ps-5">
-            <ul className="icon ">
+            <ul className="icon list-unstyled ">
               <li>
-                <i class="fab fa-facebook-f"></i>
+                <i className="fab fa-facebook-f"></i>
               </li>
               <li>
-                <i class="fab fa-facebook-messenger"></i>
+                <i className="fab fa-facebook-messenger"></i>
               </li>
               <li>
-                <i class="fab fa-twitter"></i>
+                <i className="fab fa-twitter"></i>
               </li>
               <li>
-                <i class="fab fa-instagram"></i>
+                <i className="fab fa-instagram"></i>
               </li>
             </ul>
           </div>

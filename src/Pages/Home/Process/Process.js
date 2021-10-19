@@ -4,7 +4,7 @@ import process from "../../../assets/the-process.jpg";
 const Process = () => {
   return (
     <div className="process-container ">
-      <div className="process row my-5  container mx-auto">
+      <div className="process row py-5  container mx-auto">
         <div className="col-lg-6 col-md-12 process-left">
           <img className="img-fluid mt-5 px-5" src={process} alt="" />
         </div>
@@ -33,7 +33,7 @@ const Process = () => {
             </div>
           </div>
           <div className="d-flex mb-3">
-          <i class="fas fa-address-book"></i>
+          <i className="fas fa-address-book"></i>
             <div className="mx-4">
               <h6  className="title">BOOK YOUR SESSION</h6>
               <p>
@@ -43,7 +43,7 @@ const Process = () => {
             </div>
           </div>
           <div className="d-flex mb-3">
-          <i class="far fa-handshake"></i>
+          <i className="far fa-handshake"></i>
             <div className="mx-4">
               <h6  className="title">COME SIT WITH ME</h6>
               <p>

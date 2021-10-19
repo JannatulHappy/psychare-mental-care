@@ -19,27 +19,83 @@ const Doctor = () => {
           domination. At the end of the day, going forward, <br />a new normal
           that has evolved from generation X is on the runway heading towards.
         </h5>
-        <div className="row my-5 container doctor mx-auto">
-          <div className="text-center col-lg-3 col-md-6">
+        <div className="row my-5  container mx-auto">
+          <div className="text-center doctor col-lg-3 col-md-6">
             <img className="img-fluid m-4" src={doctor1} alt="" />
             <h5 className="title">Susan Lopez </h5>
             <p className="sub-title">Founder & Senior consultant</p>
+            <ul className="icon  list-unstyled">
+            <li>
+            <i className="fab fa-facebook-f"></i>
+            </li>
+            <li>
+              <i className="fab fa-facebook-messenger"></i>
+            </li>
+            <li>
+              <i className="fab fa-twitter"></i>
+            </li>
+            <li>
+              <i className="fab fa-instagram"></i>
+            </li>
+          </ul>
           </div>
-          <div className="text-center col-lg-3 col-md-6">
+          <div className="text-center doctor col-lg-3 col-md-6">
             <img className="img-fluid m-4" src={doctor2} alt="" />
             <h5 className="title">Richard  Drueld</h5>
             <p className="sub-title">Senior consultant, MBBS</p>
+            <ul className="icon list-unstyled ">
+            <li>
+            <i className="fab fa-facebook-f"></i>
+            </li>
+            <li>
+              <i className="fab fa-facebook-messenger"></i>
+            </li>
+            <li>
+              <i className="fab fa-twitter"></i>
+            </li>
+            <li>
+              <i className="fab fa-instagram"></i>
+            </li>
+          </ul>
           </div>
-          <div className="text-center col-lg-3 col-md-6">
+          <div className="text-center doctor col-lg-3 col-md-6">
             <img className="img-fluid m-4" src={doctor3} alt="" />
             <h5 className="title">Orbek Miel</h5>
             <p className="sub-title">Senior consultant, MBBS</p>
+            <ul className="icon list-unstyled ">
+            <li>
+            <i className="fab fa-facebook-f"></i>
+            </li>
+            <li>
+              <i className="fab fa-facebook-messenger"></i>
+            </li>
+            <li>
+              <i className="fab fa-twitter"></i>
+            </li>
+            <li>
+              <i className="fab fa-instagram"></i>
+            </li>
+          </ul>
           </div>
           
-          <div className="text-center col-lg-3 col-md-6">
+          <div className="text-center doctor col-lg-3 col-md-6">
             <img className="img-fluid m-4" src={doctor4} alt="" />
             <h5 className="title">Michel Joe </h5>
             <p className="sub-title">Senior consultant, MBBS</p>
+            <ul className="icon list-unstyled ">
+            <li>
+            <i className="fab fa-facebook-f"></i>
+            </li>
+            <li>
+              <i className="fab fa-facebook-messenger"></i>
+            </li>
+            <li>
+              <i className="fab fa-twitter"></i>
+            </li>
+            <li>
+              <i className="fab fa-instagram"></i>
+            </li>
+          </ul>
           </div>
         </div>
       </div>

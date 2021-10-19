@@ -1,0 +1,38 @@
+
+.service{
+    overflow:hidden;
+   box-shadow: 10px 10px 10px rgb(204, 202, 202);
+}
+.service img{
+width:210;
+height: 190px;
+border-radius: 7px;
+margin: 0 auto;
+}
+.psychare-btn{
+    background-color: #ac7757;
+    padding: 12px 18px;
+    color: rgb(240, 244, 248);
+    font-weight: bold;
+    font-size: 14px;
+    word-spacing: 2px;
+    border: 1px solid #ac7757;
+    width:60%;
+}
+.card{
+    border:none;
+   background-color: rgb(241, 245, 248);
+    cursor: zoom-in;
+  transition: transform 0.5s ease;
+  
+}
+.card:hover {
+    transform: scale(1.075);
+}
+.service-title {
+    color:rgb(199, 146, 77);
+    margin-bottom: 16px;
+}
+.card-text{
+    color:gray
+}

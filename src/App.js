@@ -6,6 +6,10 @@ import Home from "./Pages/Home/Home";
 import About from "./Pages/Home/About/About";
 import Footer from "./Pages/Shared/Footer/Footer";
 import Patients from "./Pages/Patients/Patients";
+import Blog from "./Pages/Blog/Blog";
+import Services from "./Pages/Home/Services/Services";
+import Error from "./Pages/Error/Error";
+import ServiceDetail from "./Pages/ServiceDetail/ServiceDetail";
 
 function App() {
   return (
@@ -20,10 +24,22 @@ function App() {
             <Home></Home>
           </Route>
           <Route path="/about">
-           <About></About>
+            <About></About>
+          </Route>
+          <Route path="/services">
+            <Services></Services>
+          </Route>
+          <Route path="/service/:serviceId">
+            <ServiceDetail></ServiceDetail>
           </Route>
           <Route path="/patients">
-          <Patients></Patients>
+            <Patients></Patients>
+          </Route>
+          <Route path="/blog">
+            <Blog></Blog>
+          </Route>
+          <Route path="*">
+            <Error></Error>
           </Route>
         </Switch>
         <Footer></Footer>
