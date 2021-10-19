@@ -1,13 +1,17 @@
 import React from "react";
 import "./Process.css";
 import process from "../../../assets/the-process.jpg";
+// process
 const Process = () => {
   return (
+    // new patient process section
     <div className="process-container ">
       <div className="process row py-5  container mx-auto">
+        {/* process image */}
         <div className="col-lg-6 col-md-12 process-left">
           <img className="img-fluid mt-5 px-5" src={process} alt="" />
         </div>
+        {/* process text */}
         <div className="col-lg-6 col-md-12 process-right mt-5">
           <h6 className="sub-title ">
             <i className="fas fa-grip-lines"></i>
@@ -23,7 +27,7 @@ const Process = () => {
             Organization (WHO).
           </p>
           <div className="d-flex mt-5 mb-3">
-          <i className="fas fa-grin-hearts"></i>
+            <i className="fas fa-grin-hearts"></i>
             <div className="mx-4">
               <h6 className="title">TALK TO US FIRST</h6>
               <p>
@@ -33,9 +37,9 @@ const Process = () => {
             </div>
           </div>
           <div className="d-flex mb-3">
-          <i className="fas fa-address-book"></i>
+            <i className="fas fa-address-book"></i>
             <div className="mx-4">
-              <h6  className="title">BOOK YOUR SESSION</h6>
+              <h6 className="title">BOOK YOUR SESSION</h6>
               <p>
                 Simplify your booking process—Get contracts signed,
                 questionnaires answered, and fees paid—all during booking.
@@ -43,9 +47,9 @@ const Process = () => {
             </div>
           </div>
           <div className="d-flex mb-3">
-          <i className="far fa-handshake"></i>
+            <i className="far fa-handshake"></i>
             <div className="mx-4">
-              <h6  className="title">COME SIT WITH ME</h6>
+              <h6 className="title">COME SIT WITH ME</h6>
               <p>
                 Turn a gray day into all the colors of the rainbow by sitting
                 down on a buddy bench and having a chat with a friends like us

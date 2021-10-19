@@ -4,8 +4,10 @@ import blogImg1 from "../../assets/blog-1.jpg";
 import blogImg2 from "../../assets/blog-2.jpg";
 import blogImg3 from "../../assets/blog-3.jpg";
 import blogImg4 from "../../assets/blog-4.jpg";
+// blog section--private route
 const Blog = () => {
   return (
+    // blog start
     <div className="blog-container">
       <div className="row container mx-auto">
         <hr className="hr" />
@@ -14,7 +16,9 @@ const Blog = () => {
           Stay Motivated, read the weekly blog articles.
         </h3>
       </div>
+      {/* blog container */}
       <div className="row container g-4 px-5 mx-auto mb-5">
+        {/* blog---1 */}
         <div className="col-lg-6 col-md-12 p-4 blog">
           <img src={blogImg1} alt="" />
           <h5 className="blog-sub-title">21 Feb. 2018</h5>
@@ -36,6 +40,7 @@ const Blog = () => {
           </p>
           <button className="blog-btn">Read More</button>
         </div>
+        {/* blog---2*/}
         <div className="col-lg-6 col-md-12 p-4">
           <img src={blogImg2} alt="" />
           <h5 className="blog-sub-title">21 Feb. 2018</h5>
@@ -57,6 +62,7 @@ const Blog = () => {
           </p>
           <button className="blog-btn">Read More</button>
         </div>
+        {/* blog-3 */}
         <div className="col-lg-6 col-md-12 p-4">
           <img src={blogImg3} alt="" />
           <h5 className="blog-sub-title">21 Feb. 2018</h5>
@@ -78,6 +84,7 @@ const Blog = () => {
           </p>
           <button className="blog-btn">Read More</button>
         </div>
+        {/* blog-4 */}
         <div className="col-lg-6 col-md-12 p-4">
           <img src={blogImg4} alt="" />
           <h5 className="blog-sub-title">21 Feb. 2018</h5>

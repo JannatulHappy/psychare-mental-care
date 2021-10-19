@@ -1,10 +1,13 @@
 import React from "react";
 import "./Patients.css";
-import experianceIng from '../../assets/experiance.jpg'
+import experienceImg from '../../assets/experiance.jpg'
+// private route
 const Patients = () => {
   return (
+    // patient section
     <div className="patient-container mt-5">
       <div className="row container  mx-auto patient">
+        {/* patient left */}
         <div className=" col-md-6 mt-5 col-lg-3 patient-left">
           <h2 className="text-white">
             <strong>New Patient</strong> Special Offer
@@ -15,6 +18,7 @@ const Patients = () => {
           </p>
           <button className="offer-btn">Get Offer</button>
         </div>
+        {/* new patient */}
         <div className="col-md-6 mt-5 col-lg-9 px-5">
           <h1 className="patient-title ">New Patient</h1>
           <hr className="hr" />
@@ -38,7 +42,7 @@ const Patients = () => {
             <i className="fas fa-check"></i>Fax us your printed and completed
             form(s) or bring it with you to your appointment
           </p>
-          <img src={experianceIng} alt="" />
+          <img src={experienceImg} alt="" />
           <h1 className="patient-title my-4">First Visit Experience</h1>
           <h4 className="patient-sub-title ">Brief Paperwork</h4>
           <p className="patient-text">

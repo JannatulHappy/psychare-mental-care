@@ -3,6 +3,7 @@ import "./Footer.css";
 import footerImg from "../../../assets/slcr-logo-footer.svg";
 
 const Footer = () => {
+  // footer start
   return (
     <div className="footer-container">
       <div className="footer container p-5 mx-auto row mt-5">

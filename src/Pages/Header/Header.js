@@ -22,17 +22,23 @@ const Header = () => {
           <NavLink to="/blog">Blog</NavLink>
         </nav>
         <div className="col-lg-5 col-md-6 col-12 header-right">
-        {user.email && (
+          {user.email && (
             <span style={{ color: "orange" }}>{user.displayName}</span>
           )}
           {user.email ? (
-            <button onClick={handleLogout} className="ms-2 btn  psychare-btn w-25 text-uppercase"> Logout</button>
+            <button
+              onClick={handleLogout}
+              className="ms-2 btn  psychare-btn w-25 text-uppercase"
+            >
+              {" "}
+              Logout
+            </button>
           ) : (
             <NavLink className="header-btn" to="/login">
               LOGIN
             </NavLink>
           )}
-         
+
           <span>
             <i className="fas fa-shopping-cart"></i>
           </span>

@@ -1,18 +1,17 @@
-.title{
-    color:rgb(170, 122, 59)
+/* doctors section styles start */
+.title {
+  color: rgb(170, 122, 59);
 }
-.sub-title{
-    color:rgb(95, 82, 82);
-    
+.sub-title {
+  color: rgb(95, 82, 82);
 }
-.doctor{
-    overflow:hidden;
+.doctor {
+  overflow: hidden;
 }
-.doctor img{
-    cursor: zoom-in;
+.doctor img {
+  cursor: zoom-in;
   transition: transform 0.5s ease;
-  
 }
-.doctor img:hover{
-    transform: scale(1.2);
+.doctor img:hover {
+  transform: scale(1.2);
 }

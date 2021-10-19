@@ -1,21 +1,23 @@
-.detail-container{
-    background-color: rgb(242, 236, 223);
+/* service styles start */
+.detail-container {
+  background-color: rgb(242, 236, 223);
 }
-.detail-title{
-    padding: 40px 50px;
-    background-color: rgb(51, 32, 6);
-    text-align: center;
-    color:white;
-    font-size: 50px;
+.detail-title {
+  padding: 40px 50px;
+  background-color: rgb(51, 32, 6);
+  text-align: center;
+  color: white;
+  font-size: 50px;
 }
-.top-title{
-    color: rgb(126, 90, 25);
+.top-title {
+  color: rgb(126, 90, 25);
 }
-.top-sub-title{
-    color: gray;
+.top-sub-title {
+  color: gray;
 }
-.top-part, .bottom-part{
-    display: flex;
-    align-items: center;
-    justify-content: center;
+.top-part,
+.bottom-part {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }

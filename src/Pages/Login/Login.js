@@ -1,21 +1,21 @@
-import React, { useState } from "react";
 import { Link, useHistory, useLocation } from "react-router-dom";
 import useAuth from "../hooks/useAuth";
 import "./Login.css";
 import googleImg from "../../assets/google.jpg";
+// login form
 const Login = () => {
+  const {setEmail,setPassword, error, signInWithGoogle,  handleUserLogin } = useAuth();
+  // needed things imported
   const location = useLocation();
   const redirect_url = location.state?.from || "/home";
   const history = useHistory();
+  // google login
   const handleGoogleLogin = () => {
     signInWithGoogle().then((result) => {
       history.push(redirect_url);
     });
   };
-  const { error, signInWithGoogle, user, handleUserLogin } = useAuth();
-
-  const [email, setEmail] = useState("");
-  const [password, setPassword] = useState("");
+  
 
   const handleEmail = (e) => {
     setEmail(e.target.value);
@@ -25,10 +25,11 @@ const Login = () => {
   };
 
   const handleLogin = () => {
-    handleUserLogin(email, password);
+    handleUserLogin();
   };
 
   return (
+    // login form
     <div className="login-form row my-5">
       <h2 className="login-title fw-bold ms-5">Login</h2>
       <form className="">
@@ -56,9 +57,11 @@ const Login = () => {
       <p>
         New to Psychare?<Link to="/register">Create Account</Link>
       </p>
+      {/* catch error */}
       <p> {error}</p>
       <div className="ms-5">---------or---------</div>
       <div className="google-signIn">
+        {/* google sign in */}
         <button onClick={handleGoogleLogin} className="btn google-btn m-2">
           <img src={googleImg} alt="" /> Sign in With Google
         </button>

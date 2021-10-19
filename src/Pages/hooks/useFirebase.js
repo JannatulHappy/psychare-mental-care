@@ -15,6 +15,7 @@ import { useEffect, useState } from "react";
 initializeAuthentication();
 
 const useFirebase = () => {
+  // imported needed things
   const auth = getAuth();
   const googleProvider = new GoogleAuthProvider();
 
@@ -22,11 +23,11 @@ const useFirebase = () => {
   const [error, setError] = useState("");
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
-
+// sign in google
   const signInWithGoogle = () => {
     return signInWithPopup(auth, googleProvider);
   };
-
+// onAuth sate change
   useEffect(() => {
     onAuthStateChanged(auth, (user) => {
       if (user) {
@@ -37,7 +38,7 @@ const useFirebase = () => {
       }
     });
   }, []);
-
+// logout
   const handleLogout = () => {
     signOut(auth)
       .then(() => {
@@ -47,7 +48,7 @@ const useFirebase = () => {
         setError(err);
       });
   };
-
+// sign in user
   const handleUserRegister = (email, password) => {
     createUserWithEmailAndPassword(auth, email, password)
       .then((result) => {
@@ -57,7 +58,7 @@ const useFirebase = () => {
         setError(error.message);
       });
   };
-
+// login user
   const handleUserLogin = (email, password) => {
     signInWithEmailAndPassword(auth, email, password)
       .then((result) => {

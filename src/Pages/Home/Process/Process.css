@@ -1,3 +1,4 @@
+/* process styles start */
 .process-container {
   background-color: rgb(248, 242, 234);
 }
@@ -26,8 +27,7 @@
 
   color: #a47355;
 }
-.process-right  .title{
-    color: #a47355;
-    font-weight: 600;
+.process-right .title {
+  color: #a47355;
+  font-weight: 600;
 }
-

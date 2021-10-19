@@ -1,18 +1,20 @@
-.login-form{
-    width: 600px;
-    margin: 0 auto;
+/* login form styles */
+.login-form {
+  width: 600px;
+  margin: 0 auto;
 }
-.google-signIn img{
-    width:45px;
-    border-radius: 22px;
+.google-signIn img {
+  width: 45px;
+  border-radius: 24px;
 }
-.google-btn, .login-btn{
-    color:white;
-    font-size: 18px;
-    font-weight: 500;
-    background-color: rgb(104, 77, 43);
+.google-btn,
+.login-btn {
+  color: white;
+  font-size: 18px;
+  font-weight: 500;
+  background-color: rgb(104, 77, 43);
 }
-.login-form input{
-   width:300px;
-    margin-bottom: 5px;
+.login-form input {
+  width: 300px;
+  margin-bottom: 5px;
 }

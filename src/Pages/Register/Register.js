@@ -30,7 +30,7 @@ const Register = () => {
   const handlePassword = (e) => {
     setPassword(e.target.value);
   };
-
+// register by email and password
   const handleRegister = () => {
     handleUserRegister();
   };
@@ -60,6 +60,7 @@ const Register = () => {
       <p>{error}</p>
       <div className="ms-5">---------or---------</div>
       <div className="google-signIn">
+        {/* google form btn */}
         <button onClick={handleGoogleLogin} className="btn google-btn m-2">
           <img src={googleImg} alt="" /> Sign in With Google
         </button>
