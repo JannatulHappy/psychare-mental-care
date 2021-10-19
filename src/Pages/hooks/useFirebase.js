@@ -77,6 +77,7 @@ const loginWithEmailPassword = () => {
           setError(`${errorCode}` - `${errorMessage}`)
       });
 }
+// for showing name
 const getName = () => {
   updateProfile(auth.currentUser, {displayName:name})
   .then((result) => {
