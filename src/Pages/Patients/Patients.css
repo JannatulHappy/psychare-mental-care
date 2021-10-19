@@ -3,6 +3,7 @@
     text-align: center;
     padding: 45px 30px 50px;
    height: 320px;
+   overflow: hidden;
 }
 .offer-sub-title{
     color:rgb(204, 194, 194)

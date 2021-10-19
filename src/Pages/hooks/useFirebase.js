@@ -20,6 +20,8 @@ const useFirebase = () => {
 
   const [user, setUser] = useState({});
   const [error, setError] = useState("");
+  const [email, setEmail] = useState("");
+  const [password, setPassword] = useState("");
 
   const signInWithGoogle = () => {
     return signInWithPopup(auth, googleProvider);
@@ -69,6 +71,8 @@ const useFirebase = () => {
   return {
     error,
     user,
+    setEmail,
+    setPassword,
     signInWithGoogle,
     handleLogout,
     handleUserRegister,
