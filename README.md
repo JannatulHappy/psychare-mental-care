@@ -7,7 +7,7 @@ this project designed with vanilla css,css framework bootstrap
 ### Live preview
 ## https://psychare-39c51.web.app
 
-here we have used some technologies
+Here we have used some technologies
 - react.js library for User Interface
 - Fontawesome icon
 - custom JSON data for api calling

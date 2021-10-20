@@ -4,10 +4,18 @@ import "./Login.css";
 import googleImg from "../../assets/google.jpg";
 // login form
 const Login = () => {
-  const { setEmail, setPassword, error, signInWithGoogle,loginWithEmailPassword} =useAuth();
+  const {
+    setUser,
+    setError,
+    setEmail,
+    setPassword,
+    error,
+    signInWithGoogle,
+    loginWithEmailPassword,
+  } = useAuth();
   // needed things imported
   const location = useLocation();
-  const redirect_url = location.state?.from || "/home"; //condition route
+  const redirect_url = location.state?.from || "/home"; //conditional route
   const history = useHistory();
   // google login
   const handleGoogleLogin = () => {
@@ -15,40 +23,52 @@ const Login = () => {
       history.push(redirect_url);
     });
   };
- 
-    // get email and password 
-    const userEmailHandeler = e => {
-      setEmail(e.target.value)
-  }
-  const userPasswordHandeler = e => {
-      setPassword(e.target.value)
-  }
-  // login with email and password handeler 
-  const emailPasswordloginHandeler = e => {
-      e.preventDefault()
-      loginWithEmailPassword()
-  }
+
+  // get email and password
+  const userEmailHandeler = (e) => {
+    setEmail(e.target.value);
+  };
+  const userPasswordHandeler = (e) => {
+    setPassword(e.target.value);
+  };
+  // login with email and password handeler
+  const emailPasswordloginHandeler = (e) => {
+    e.preventDefault();
+    loginWithEmailPassword()
+      .then((result) => {
+        // Signed in
+        setUser(result.user);
+        history.push(redirect_url);
+        setError("Congratulation..!");
+      })
+      .catch((error) => {
+        setError(error.message);
+      });
+  };
   return (
     // login form
     <div className="login-form row my-5">
       <h2 className="login-title fw-bold ms-5">Login</h2>
       <form onSubmit={emailPasswordloginHandeler}>
         <input
-          required onBlur={userEmailHandeler} 
+          required
+          onBlur={userEmailHandeler}
           className="mt-2 p-2"
           type="email"
           placeholder="Email"
         />
         <br />
         <input
-          required onBlur={userPasswordHandeler}
+          required
+          onBlur={userPasswordHandeler}
           className="mt-2 p-2"
           type="password"
           placeholder="Password"
         />
         <br />
 
-        <input value="Login"
+        <input
+          value="Login"
           className="btn mt-2 w-50 mx-auto my-4 login-btn"
           type="submit"
         />
@@ -57,18 +77,17 @@ const Login = () => {
         New to Psychare?<Link to="/register">Create Account</Link>
       </p>
       {/* catch error */}
-    
+
       <div className="ms-5">---------or---------</div>
       <div className="google-signIn">
         {/* google sign in */}
         <button onClick={handleGoogleLogin} className="btn google-btn m-2">
           <img src={googleImg} alt="" /> Sign in With Google
         </button>
-        <p> {error}</p>
+        <p className="text-success fw-bold mt-3"> {error}</p>
       </div>
     </div>
   );
 };
 
 export default Login;
-
