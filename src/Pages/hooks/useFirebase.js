@@ -30,6 +30,7 @@ const useFirebase = () => {
         setUser(user);
       } else {
         // User is signed out
+        setUser({})
         // ...
       }
       setIsloading(false)
@@ -40,41 +41,35 @@ const useFirebase = () => {
     setIsloading(true)
         signOut(auth).then(() => {
             setUser({});
-            setError('')
+           
         }).catch((error) => {
-            const errMsg = error.message;
-            setError(errMsg)
+            setError(error);
+            
         }).finally(() => setIsloading(false))
   };
 // sign in user
 const createUserWithEmailPassword = () => {
   createUserWithEmailAndPassword(auth, email, password)
-      .then((userCredential) => {
-          const user = userCredential.user;
-          setUser(user);
-          setError('Account Creating Success, please login..');
+      .then((result) => {
+          setUser(result.user);
+          setError('Account Created Successfully, please login..');
           getName();
       })
       .catch((error) => {
-          const errorCode = error.code;
-          const errorMessage = error.message;
-          setError(`${errorCode}` - `${errorMessage}`)
+          setError(error.message)
       });
 }
 
 // login user
 const loginWithEmailPassword = () => {
   signInWithEmailAndPassword(auth, email, password)
-      .then((userCredential) => {
+      .then((result) => {
           // Signed in 
-          const user = userCredential.user;
-          setUser(user);
+          setUser(result.user);
           setError('')
       })
       .catch((error) => {
-          const errorCode = error.code;
-          const errorMessage = error.message;
-          setError(`${errorCode}` - `${errorMessage}`)
+          setError(error.message)
       });
 }
 // for showing name
@@ -95,7 +90,7 @@ const getName = () => {
     setEmail,
     setPassword,
     loginWithEmailPassword,
-    setName,
+   setName,
     isLoading,
     setIsloading
   };

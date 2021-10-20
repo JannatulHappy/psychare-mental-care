@@ -49,7 +49,7 @@ const Login = () => {
         <br />
 
         <input value="Login"
-          className="btn btn-success mt-2 w-50 mx-auto my-4 login-btn"
+          className="btn mt-2 w-50 mx-auto my-4 login-btn"
           type="submit"
         />
       </form>
@@ -57,13 +57,14 @@ const Login = () => {
         New to Psychare?<Link to="/register">Create Account</Link>
       </p>
       {/* catch error */}
-      <p> {error}</p>
+    
       <div className="ms-5">---------or---------</div>
       <div className="google-signIn">
         {/* google sign in */}
         <button onClick={handleGoogleLogin} className="btn google-btn m-2">
           <img src={googleImg} alt="" /> Sign in With Google
         </button>
+        <p> {error}</p>
       </div>
     </div>
   );

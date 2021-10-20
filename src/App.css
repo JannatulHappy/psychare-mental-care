@@ -5,9 +5,6 @@
   margin: 0;
   font-family: 'Andada Pro', serif;
   overflow-x: hidden;
-}
-body{
-  
+  scroll-behavior: smooth;
   box-sizing: border-box;
-
 }

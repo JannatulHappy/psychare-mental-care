@@ -1,4 +1,7 @@
 /* doctors section styles start */
+.doctors-container{
+  background-color: rgb(236, 243, 243);
+}
 .title {
   color: rgb(170, 122, 59);
 }

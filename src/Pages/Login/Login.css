@@ -18,3 +18,8 @@
   width: 300px;
   margin-bottom: 5px;
 }
+.google-btn:hover,
+.login-btn:hover{
+  background-color: rgb(46, 72, 77);
+  color:white;
+}
