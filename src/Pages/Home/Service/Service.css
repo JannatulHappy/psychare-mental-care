@@ -1,7 +1,7 @@
 /* service styles start */
 .service {
   overflow: hidden;
-  box-shadow: 10px 10px 10px rgb(204, 202, 202);
+  box-shadow: 10px 10px 10px  rgb(204, 202, 202);
 }
 .service img {
   width: 210;

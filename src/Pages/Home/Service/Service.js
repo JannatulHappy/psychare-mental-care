@@ -6,11 +6,11 @@ const Service = (props) => {
   const { name, image, title2Des, id } = props.service;
   return (
     // service container
-    <div className="col-lg-4 col-md-6 col-12 px-4 service-container ">
+    <div className="col-lg-4 col-md-6 col-12 px-md-4  px-lg-4 service-container ">
       <div className="service">
-        <div className="card pb-3 px-3 h-100">
+        <div className="card pb-3  px-md-3 px-lg-3 h-100">
           <img src={image} alt="" className="card-img-top card-img" />
-          <div className="card-body p-3">
+          <div className="card-body p-md-3 p-lg-3">
             <h5 className="service-title card-title">{name}</h5>
             <p className="card-text service-text">{title2Des.slice(0, 150)}.</p>
           </div>

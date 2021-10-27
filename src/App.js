@@ -49,7 +49,7 @@ function App() {
             <Route path="/register">
               <Register></Register>
             </Route>
-            <Route path="*">
+            <Route exact path="*">
               <Error></Error>
             </Route>
           </Switch>

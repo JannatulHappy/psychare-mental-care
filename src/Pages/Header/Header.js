@@ -10,18 +10,18 @@ const Header = () => {
   return (
     <div>
       <UpHeader></UpHeader>
-      <div className="header my-3 mx-auto row container-lg">
-        <div className="col-lg-3 col-md-6  col-12">
+      <div className="header my-3 mx-lg-auto mx-md-auto row container-lg">
+        <div className="col-lg-3 col-md-5 col-12">
           <img src={logo} alt="" />
         </div>
-        <nav className="header-middle col-lg-4 col-md-6 col-12 ">
+        <nav className="header-middle col-lg-4  col-md-7 col-12 ">
           <NavLink to="/home"> Home</NavLink>
           <NavLink to="/about">About</NavLink>
           <NavLink to="/services">Services</NavLink>
           <NavLink to="/patients">Patients</NavLink>
           <NavLink to="/blog">Blog</NavLink>
         </nav>
-        <div className="col-lg-5 col-md-6 col-12 header-right">
+        <div className="col-lg-5 col-md-12  col-12 header-right">
           {user.email && (
             <span style={{ color: "orange" }}>{user.displayName}</span>
           )}
