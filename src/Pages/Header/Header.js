@@ -30,7 +30,7 @@ const Header = () => {
               onClick={handleLogout}
               className="ms-2 btn  psychare-btn w-25 text-uppercase"
             >
-              {" "}
+              
               Logout
             </button>
           ) : (
